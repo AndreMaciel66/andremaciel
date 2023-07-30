@@ -1,8 +1,7 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
-import BlogPost from "@components/BlogPost.astro.astro";
-const allPosts = await Astro.glob('../pages/posts/*.md');
-console.log(allPosts)
+import BlogPost from "@components/BlogPost.astro";
+const allPosts = await Astro.glob('../pages/posts/*.md*');
 const pageTitle: string = "My Astro learning blog";
 ---
 
